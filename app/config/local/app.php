@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://www.belessbad.com',
+	'url' => 'http://belessbad',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -65,7 +65,7 @@ return array(
 	|
 	*/
 
-	'key' => 'itGxWARLoFR3FxpwAb1ksNlOFhVdJvF0',
+	'key' => 'Y7gBdtoXTOzweNswGqSyBA6jNyDrV9JF',
 
 	/*
 	|--------------------------------------------------------------------------
