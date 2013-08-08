@@ -1,4 +1,3 @@
-Options +FollowSymLinks
 
 <FilesMatch "\.blade.php$">
    Order Deny,Allow
