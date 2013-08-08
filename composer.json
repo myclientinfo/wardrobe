@@ -28,6 +28,9 @@
 		]
 	},
 	"config": {
+		"github-oauth":{
+			"github.com":"2df5544ffbfb3af5a9d1ff84940e1055167e7d17"
+		},
 		"preferred-install": "dist"
 	},
 	"minimum-stability": "dev"
