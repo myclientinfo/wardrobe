@@ -21,9 +21,10 @@ Route::get('/tags', function()
     return View::make(theme_path('tags'));
 });
 
-Route::get('/test', function()
+Route::get('/{page}', function($page)
 {
-	$posts = Posts::where('title-stub', '=', 'test' )->get();
-	dd($posts);
-    return View::make(theme_path('page'));
-});
+
+	$post = Wardrobe\Post::where('slug', '=', $page )->first();
+	
+    return View::make(theme_path('page'), array('post'=>$post));
+})->where('page', '[A-Za-z]+');
