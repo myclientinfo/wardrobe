@@ -2,7 +2,12 @@
 
 @section('content')
 
-  <section class="about">
-    <p>This could be an about page.</p>
+  <section class="page">
+
+  <h2 class="title">{{ $post->title }}</h2>
+
+  {{ $post->parsed_content }}
+  
   </section>
+
 @stop
