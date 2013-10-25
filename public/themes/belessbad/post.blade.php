@@ -8,6 +8,8 @@
   <section>
     <h2 class="title">{{ $post->title }}</h2>
 
+    <div class="date">written by {{ $post->user->first_name }} :: published {{ date("jS \of F, Y", strtotime($post->publish_date)) }}</div>
+    
     {{ $post->parsed_content }}
 
     @include(theme_path('inc.tags'))
