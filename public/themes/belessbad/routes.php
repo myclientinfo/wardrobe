@@ -23,8 +23,6 @@ Route::get('/tags', function()
 
 Route::get('/{page}', function($page)
 {
-
-	$post = Wardrobe\Post::where('slug', '=', $page )->first();
-	
+	$post = Wardrobe\Post::where('slug', '=', $page )->first();	
     return View::make(theme_path('page'), array('post'=>$post));
 })->where('page', '[A-Za-z]+');
